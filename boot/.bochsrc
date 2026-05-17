@@ -1,0 +1,5 @@
+#Tell the bochs to use our boot_sector.bin as a bootable drive.
+# The booting media is taken as a floppy disk which is inserted into a computer at the booting time.
+
+floppya: 1_44=boot.bin, status=inserted
+boot: a
