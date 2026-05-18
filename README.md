@@ -2,7 +2,7 @@
 
 
 # Simple_OS ![GitHub last commit](https://img.shields.io/github/last-commit/Hanoch77-code/Simple_OS)
-This is a simple OS that is am creating by referring the books and Youtube videos.
+This is a simple OS that I am creating by referring the books and Youtube videos.
 ## Introduction
 - Writing a simple Operating System from Scratch -- by Nick Blundell
 - This book is the starting point of this repo and I have made a simple boot sector and also included testing exercises for improving the understanding of the OS working and how a CPU understands instruction.
