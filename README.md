@@ -1,7 +1,8 @@
 <img width="700" height="100" alt="Simple_OS" src="https://github.com/user-attachments/assets/4afa49f7-95dc-4b1a-8440-1207f27c946f" />
 
 
-# Simple_OS https://img.shields.io/github/last-commit/Hanoch77-code/Simple_OS
+# Simple_OS 
+https://img.shields.io/github/last-commit/Hanoch77-code/Simple_OS
 This is a simple OS that is am creating by referring the books and Youtube videos.
 ## Introduction
 - Writing a simple Operating System from Scratch -- by Nick Blundell
