@@ -7,7 +7,7 @@
 
 ; This is what the cpu runs this portion is important and can be edited.
 
-mov ah,0x0e
+mov ah,0x0e ; Scrolling teletype BIOS routine mode.
 
 mov al,'H'
 int 0x10
