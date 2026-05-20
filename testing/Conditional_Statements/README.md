@@ -1,13 +1,13 @@
 # Conditional Statements
 - The conditional Statements help in running a block of code based on a particular event or condition. 
 - In assembly we use mnemonics like
-        ##- cmp  : This compares a two value and creates a Flag. 
-        ##-- je  : jump if equal (it reads the cmp flag)
-        ##-- jne : jump if not equal
-        ##-- jl  : jump if less than
-        ##-- jle : jump if less than or equal
-        ##-- jg  : jump if greater than
-        ##-- jge : jump if greater than or equal
+        ## - cmp  : This compares a two value and creates a Flag. 
+        ## -- je  : jump if equal (it reads the cmp flag)
+        ## -- jne : jump if not equal
+        ## -- jl  : jump if less than
+        ## -- jle : jump if less than or equal
+        ## -- jg  : jump if greater than
+        ## -- jge : jump if greater than or equal
 For example:
 a = 30;
 if(a <= 4){
