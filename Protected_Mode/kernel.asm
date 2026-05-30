@@ -1,0 +1,41 @@
+[BITS 32]
+
+start:
+
+    ; Clear screen
+
+    mov edi, 0xB8000
+    mov ecx, 80 * 25
+    mov ax, 0x0720
+
+clear_screen:
+    mov word [edi], ax
+    add edi, 2
+    loop clear_screen
+
+
+    ; Print message
+
+    mov edi, 0xB8000
+
+    mov byte [edi], 'K'
+    mov byte [edi+1], 0x0F
+
+    mov byte [edi+2], 'e'
+    mov byte [edi+3], 0x0F
+
+    mov byte [edi+4], 'r'
+    mov byte [edi+5], 0x0F
+
+    mov byte [edi+6], 'n'
+    mov byte [edi+7], 0x0F
+
+    mov byte [edi+8], 'e'
+    mov byte [edi+9], 0x0F
+
+    mov byte [edi+10], 'l'
+    mov byte [edi+11], 0x0F
+
+
+hang:
+    jmp hang
