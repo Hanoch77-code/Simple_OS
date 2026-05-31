@@ -3,12 +3,25 @@
 
 cli
 
-
 xor ax, ax
 mov ds, ax
 mov es, ax
 mov ss, ax
 mov sp, 0x7C00
+
+;;; Reading the display properties
+
+mov ax,0x4F03
+int 0x10
+
+mov ax,0x4F01
+mov cx,0x4118
+mov di,0x9000
+int 0x10
+
+
+
+
 
 mov [boot_drive], dl  ; <--- SAVE THE BI0S DRIVE NUMBER HERE!
 
@@ -23,8 +36,9 @@ out 0x92, al
 ; Load kernel from disk
 ; --------------------------
 xor ax, ax
-mov es, ax
-mov bx, 0x1000
+mov ax,0x1000
+mov es,ax
+xor bx,bx
 
 mov ah, 0x02
 mov al, 1        
@@ -102,7 +116,7 @@ protected_mode:
     mov ebp, esp
 
     ; Jump to kernel loaded at 0x1000
-    jmp 0x1000
+    jmp 0x10000
 
 
 ; ==================================================

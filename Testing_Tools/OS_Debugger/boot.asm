@@ -9,9 +9,12 @@
 
 ; This program tries to print a secret code which is named the_secret which contains 'X' by using different methods and addresses to verify its location.
 
+mov bp,0x8000
+mov sp,bp
+
 mov ah,0x0e
-mov bx,the_secret
-call print_string
+mov dx,0x4FA4
+call print_hex
 
 jmp $
 
@@ -20,6 +23,8 @@ jmp $
 the_secret:
  db 'Hello World!',0
 
+HEX_OUT:
+ db '0x0000',0
 ; This portion only Edit the file till the File size is 512 bytes and last 2 bytes being the magic number, i.e aa55
 times 510-($-$$) db 0 ; Padding all the extra space with the 0's
 
