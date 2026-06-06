@@ -9,16 +9,20 @@
 
 ; This program tries to print a secret code which is named the_secret which contains 'X' by using different methods and addresses to verify its location.
 
-mov ah,0x0e
 mov bx,the_secret
 call print_string
+mov bx,0xFAFA
+call print_hex_v3
 
 jmp $
 
 %include "print_fun.asm"
 
 the_secret:
- db 'Hello World!',0
+ db "Hello World!",0
+
+hex:
+db "0x0000",0
 
 ; This portion only Edit the file till the File size is 512 bytes and last 2 bytes being the magic number, i.e aa55
 times 510-($-$$) db 0 ; Padding all the extra space with the 0's
