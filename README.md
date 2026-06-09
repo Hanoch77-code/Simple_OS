@@ -31,3 +31,11 @@ This is a simple OS that I am creating by [referring books and Youtube videos](#
 ## References
 - <b>Writing a simple Operating System from Scratch --<i>by Nick Blundell:</i></b>\
  This book is the starting point of this repo and I have made a simple boot sector and also included testing exercises for improving the understanding of the OS working and how a CPU understands instruction.
+
+### TODO
+- So I think this OS needs to first understand what hardware it is on.
+- Then it can work on installing the exact version which can utilize the Hardware i.e drivers and custom bootloaders, because it is not limited to just modern 64 bit cores.
+- But also to the old basic 8 bit or 4 bit processor or any digital system.
+
+# Tasking Working ON
+- Making a proper Folder Structure.
